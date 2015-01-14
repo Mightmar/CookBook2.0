@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="false"
+    android:background="#ffffbe14">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importuj swój przepis"
+        android:id="@+id/btnImportuj"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonClicked_Importuj"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wyszukaj przepis w internecie"
+        android:id="@+id/btnWyszukaj"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/btnImportuj"
+        android:layout_alignRight="@+id/btnImportuj"
+        android:layout_alignEnd="@+id/btnImportuj"
+        android:onClick="buttonClicked_Wyszukaj"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twoje Przepisy"
+        android:id="@+id/btnTwojePrzepisy"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/btnImportuj"
+        android:layout_alignRight="@+id/btnImportuj"
+        android:layout_alignEnd="@+id/btnImportuj"
+        android:onClick="buttonClicked_Twoje_przepisy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Twoja książka kucharska"
+        android:id="@+id/textTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnTwojePrzepisy"
+        android:layout_alignEnd="@+id/btnTwojePrzepisy"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
